@@ -1,18 +1,15 @@
 using namespace std;
 #include <iostream>
 
+int* wedgie(void)
+{
+  static int foo = 7;
+  cout << foo;
+  return (&foo);
+}
+
 int main() 
 {
-  int i1 = 100, i2;
-  int* pi;
-
-  pi = &i1;
-
-  cout<< i1 << *pi;
-
-  *pi = 10;
-  cout << i1;
-
-  i2 = *pi;
-  cout << i2;
+  int *blah;
+  blah = wedgie();
 }
