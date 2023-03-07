@@ -11,7 +11,7 @@ int main()
   cout<< i1 << *pi;
 
   *pi = 10;
-//  cout << i1;
+  cout << i1;
 
   i2 = *pi;
 //  cout << i2;
