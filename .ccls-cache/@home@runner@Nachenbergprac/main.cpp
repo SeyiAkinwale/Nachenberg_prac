@@ -13,4 +13,7 @@ int main()
   int *blah;
   blah = wedgie();
   cout <<*blah;
+
+  (*blah) += 3;
+  wedgie();
 }
