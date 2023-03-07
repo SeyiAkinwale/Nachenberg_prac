@@ -12,4 +12,5 @@ int main()
 {
   int *blah;
   blah = wedgie();
+  cout <<*blah;
 }
