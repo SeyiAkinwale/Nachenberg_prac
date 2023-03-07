@@ -14,5 +14,5 @@ int main()
   cout << i1;
 
   i2 = *pi;
-//  cout << i2;
+  cout << i2;
 }
