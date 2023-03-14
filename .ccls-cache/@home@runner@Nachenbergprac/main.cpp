@@ -3,19 +3,13 @@ using namespace std;
 
 int main ()
 {
-  int nums []={2,4,6, 1,2,3};
-  int *p = nums;
+  int v1 = 10, v2 = 25;
+  int *p1=&v1,*p2 =&v2;
 
-  while (p < nums + 6)
-  {
-    if (*p % 3 == 0)
-      *p = *p +1;
-    else if(*p % 2 == 0)
-    {
-      *p +=2;
-      p = p + 1;
-    }
-    p = p +1;
-  }
-  for (int i = 0; i<6; i++) cout << nums[i] << " ";
+  *p1 += *p2;
+  p2 = p1;
+  *p2 = *p1 + *p2
+
+  cout<< "*p1 = " << *p1  <<" *p2 = " << *p2
+      << " v1 = " << v1   <<" v1  = " << v2 << endl;
 }
