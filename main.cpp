@@ -3,7 +3,7 @@ using namespace std;
 
 int main ()
 {
-  int numbs []={2,4,6, 1,2,3};
+  int nums []={2,4,6, 1,2,3};
   int *p = nums;
 
   while (p < nums + 6)
@@ -12,10 +12,10 @@ int main ()
       *p = *p +1;
     else if(*p % 2 == 0)
     {
-      *p = +=2;
+      *p +=2;
       p = p + 1;
     }
     p = p +1;
   }
-  for (int i = 0; i<6; i++) cout << num[i] << " "l
+  for (int i = 0; i<6; i++) cout << nums[i] << " ";
 }
