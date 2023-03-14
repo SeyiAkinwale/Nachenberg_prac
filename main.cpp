@@ -1,19 +1,21 @@
 using namespace std;
 #include <iostream>
 
-int* wedgie(void)
+int main ()
 {
-  static int foo = 7;
-  cout << foo;
-  return (&foo);
-}
+  int numbs []={2,4,6, 1,2,3};
+  int *p = nums;
 
-int main() 
-{
-  int *blah;
-  blah = wedgie();
-  cout <<*blah;
-
-  (*blah) += 3;
-  wedgie();
+  while (p < nums + 6)
+  {
+    if (*p % 3 == 0)
+      *p = *p +1;
+    else if(*p % 2 == 0)
+    {
+      *p = +=2;
+      p = p + 1;
+    }
+    p = p +1;
+  }
+  for (int i = 0; i<6; i++) cout << num[i] << " "l
 }
