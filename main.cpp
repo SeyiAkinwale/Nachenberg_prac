@@ -15,9 +15,17 @@ int main ()
 
   Student Ade, Femi, Emeka,  Akachi;
   Ade.intPointer = &x1;
+  Femi.intPointer = &x2;
+  Emeka.intPointer = &x3;
+  Akachi.intPointer = &x4;
 
-  cout <<"*(Ade.intPointer) " <<*(Ade.intPointer);
-  
+  cout <<"*(Ade.intPointer)    " <<   *(Ade.intPointer)<<endl;
+  cout <<"*(Femi.intPointer)   " <<  *(Femi.intPointer)<<endl;
+  cout <<"*(Emeka.intPointer)  " << *(Emeka.intPointer)<<endl;
+  cout <<"*(Akachi.intPointer) " <<*(Akachi.intPointer)<<endl;
+
+  Student* studentInfo[]={&Ade, &Femi, &Emeka, &Akachi};
+  cout<<""(studentInfo[1].intPointer);
   // cout << "x = " << x << endl;
   // cout << "ptr1 = " << ptr1 << endl;
 
