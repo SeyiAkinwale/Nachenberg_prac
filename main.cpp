@@ -16,6 +16,10 @@ int main ()
 
   **ptr2=200;
   cout << "x = " << x << endl;
+
+  int*** ptr3 = &ptr2;
+  ***ptr3 = 300;
+  cout << "x = " << x << endl;
   return 0;
 }
 
