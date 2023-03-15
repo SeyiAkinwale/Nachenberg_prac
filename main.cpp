@@ -13,10 +13,10 @@ int main ()
   int x1 = 10, x2 = 20, x3 = 30, x4 = 40;
   // int* ptr1 = &x;
 
-  Student Allan;
-  Allan.intPointer = &x1;
+  Student Ade, Femi, Emeka,  Akachi;
+  Ade.intPointer = &x1;
 
-  cout <<"*(Allan.intPointer) " <<*(Allan.intPointer);
+  cout <<"*(Ade.intPointer) " <<*(Ade.intPointer);
   
   // cout << "x = " << x << endl;
   // cout << "ptr1 = " << ptr1 << endl;
