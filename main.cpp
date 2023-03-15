@@ -16,7 +16,7 @@ int main ()
   Student Allan;
   Allan.intPointer = &x1;
 
-  cout <<"*(Allan.intPointer) " <<*(Allan->intPointer);
+  cout <<"*(Allan.intPointer) " <<*(Allan.intPointer);
   
   // cout << "x = " << x << endl;
   // cout << "ptr1 = " << ptr1 << endl;
