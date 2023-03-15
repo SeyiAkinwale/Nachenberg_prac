@@ -10,6 +10,9 @@ int main ()
 
   cout << "x = " << x << endl;
   cout << "ptr1 = " << ptr1 << endl;
+
+  int** ptr2 = &ptr1;
+  cout << "ptr2 = " << ptr2 << endl;
   return 0;
 }
 
