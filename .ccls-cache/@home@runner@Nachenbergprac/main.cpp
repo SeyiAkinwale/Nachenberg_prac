@@ -14,6 +14,8 @@ int main ()
   // int* ptr1 = &x;
 
   Student Ade, Femi, Emeka,  Akachi;
+  Ade.name   = "Ade";   Femi.name   = "Femi";
+  Emeka.name = "Emeka"; Akachi.name = "Akachi";
   Ade.intPointer = &x1;
   Femi.intPointer = &x2;
   Emeka.intPointer = &x3;
@@ -25,7 +27,8 @@ int main ()
   cout <<"*(Akachi.intPointer) " <<*(Akachi.intPointer)<<endl;
 
   Student* studentInfo[]={&Ade, &Femi, &Emeka, &Akachi};
-  cout<< "*(studentInfo[1]).intPointer " << *(studentInfo[1]).intPointer;
+  cout<< "Ade.name " << Ade.name;
+  cout<< "*(studentInfo[0]).intPointer " << studentInfo[1]->name;
   // cout << "x = " << x << endl;
   // cout << "ptr1 = " << ptr1 << endl;
 
