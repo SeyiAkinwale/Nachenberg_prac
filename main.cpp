@@ -3,7 +3,7 @@ using namespace std;
 
 class Node {
   public:
-    int* x = nullptr;
+    int** x = nullptr;
     int m = 0;
 };
 
