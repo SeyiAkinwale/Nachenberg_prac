@@ -28,7 +28,10 @@ int main ()
 
   Student* studentInfo[]={&Ade, &Femi, &Emeka, &Akachi};
   cout<< "Ade.name " << Ade.name << endl;
-  cout<< "*(studentInfo[0])->intPointer " << *(studentInfo[0]->intPointer);
+  cout<< "*(studentInfo[0])->intPointer " <<   *(studentInfo[0]->intPointer) <<endl;
+
+  *(studentInfo[0]->intPointer)=23;
+    cout<< "*(studentInfo[0])->intPointer " << *(studentInfo[0]->intPointer) <<endl;
   // cout << "x = " << x << endl;
   // cout << "ptr1 = " << ptr1 << endl;
 
