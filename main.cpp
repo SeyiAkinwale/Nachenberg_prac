@@ -10,6 +10,8 @@ class Node {
 
 int main ()
 {
+  Node aNode;
+  cout<<aNode.m;
   int x1 = 10, x2 = 20, x3 = 30, x4 = 40;
   
 
