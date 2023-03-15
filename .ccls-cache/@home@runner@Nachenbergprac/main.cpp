@@ -12,14 +12,14 @@ int main ()
 
   cout << "num1: " << num1 << " num2: " << num2;
   cout << " num3: "<< num3 << endl;
-  if (p == &num1) cout << " num1";
+  if (p == &num1) cout << " hi num1";
   else if ( p == &num2) cout << " num2";
   else if ( p == &num3) cout << " num3";
   
   return 0;
 }
 
-void mystery (int* pts, int& a, int& b)
+void mystery (int* ptr, int& a, int& b)
 {
   a++;
   b--;
