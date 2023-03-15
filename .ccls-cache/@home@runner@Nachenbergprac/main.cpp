@@ -13,6 +13,9 @@ int main ()
 
   int** ptr2 = &ptr1;
   cout << "ptr2 = " << ptr2 << endl;
+
+  **ptr2=200;
+  cout << "x = " << x << endl;
   return 0;
 }
 
