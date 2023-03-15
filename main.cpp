@@ -1,15 +1,31 @@
 using namespace std;
 #include <iostream>
 
+void mystery (int* ptr, int& a, int& b);
+
 int main ()
 {
-  int v1 = 10, v2 = 25;
-  int *p1=&v1,*p2 =&v2;
+  int num1 = 0, num2 = 14, num3 = 17;
+  int *p = &num1;
 
-  *p1 += *p2;
-  p2 = p1;
-  *p2 = *p1 + *p2
+  mystery(p, num2, num3);
 
-  cout<< "*p1 = " << *p1  <<" *p2 = " << *p2
-      << " v1 = " << v1   <<" v1  = " << v2 << endl;
+  cout << "num1: " << num1 << " num2: " << num2;
+  cout << " num3: "<< num3 << endl;
+  if (p == &num1) cout << " num1";
+  else if ( p == &num2) cout << " num2";
+  else if ( p == &num3) cout << " num3";
+  
+  return 0;
+}
+
+void mystery (int* pts, int& a, int& b)
+{
+  a++;
+  b--;
+  if (a > b)
+        ptr = &a;
+  else
+        ptr = &b;
+  (*ptr) += 10;
 }
