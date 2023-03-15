@@ -1,7 +1,7 @@
 using namespace std;
 #include <iostream>
 
-void mystery (int* ptr, int& a, int& b);
+void mystery (int* &ptr, int& a, int& b);
 
 int main ()
 {
@@ -19,7 +19,7 @@ int main ()
   return 0;
 }
 
-void mystery (int* ptr, int& a, int& b)
+void mystery (int* &ptr, int& a, int& b)
 {
   a++;
   b--;
