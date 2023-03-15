@@ -25,7 +25,7 @@ int main ()
   cout <<"*(Akachi.intPointer) " <<*(Akachi.intPointer)<<endl;
 
   Student* studentInfo[]={&Ade, &Femi, &Emeka, &Akachi};
-  cout<<""(studentInfo[1].intPointer);
+  cout<< "*(studentInfo[1]).intPointer " << *(studentInfo[1]).intPointer;
   // cout << "x = " << x << endl;
   // cout << "ptr1 = " << ptr1 << endl;
 
