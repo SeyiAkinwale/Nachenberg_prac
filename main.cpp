@@ -10,10 +10,14 @@ class Node {
 
 int main ()
 {
+  int   x0=10;
+  int*  y0= &x0;
+  int** z0= &y0;
   Node aNode;
-  cout<<aNode.m;
-  int x1 = 10, x2 = 20, x3 = 30, x4 = 40;
-  
+  aNode.x=&y0;
+  cout<<aNode.m<<endl;
+  cout<<"aNode.x = "<< aNode.x;
+  int x1 = 10, x2 = 20, x3 = 30, x4 = 40;  
 
   return 0;
   
