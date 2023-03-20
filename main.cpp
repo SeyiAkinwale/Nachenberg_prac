@@ -6,10 +6,10 @@ double computeAverage(const double* scores, int nScores)
   const double* ptr = scores;
   double tot = 0;
   while (ptr!= scores + nScores)
-    {
-      tot += *ptr;
-      ptr++;
-    }
+  {
+    tot += *ptr;
+    ptr++;
+  }
   return tot/nScores;
 }
 
@@ -17,7 +17,7 @@ double computeAverage(const double* scores, int nScores)
 int main ()
 {
   double vals[]={1,2,2,7};
-  int ARRAY_SIZE;
+  int ARRAY_SIZE=4;
   cout<<computeAverage(vals, ARRAY_SIZE);
   return 0;
 }
