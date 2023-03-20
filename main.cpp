@@ -2,18 +2,18 @@ using namespace std;
 #include <iostream>
 #include <cmath>
 
-void hypotenuse(double leg1, double leg2, double* resultPtr)
+bool match(const char str1[], const char str2[])
 {
-  *resultPtr = sqrt(leg1*leg1 + leg2*leg2);
+  while (str1 != 0 && str2 !=0) //zero bytes at ends
+  {
+    if(str1 != str2) //compare corresponding characters
+      return false;
+    str1++;
+  }
 }
 
 int main ()
 {
-  double* p;
-  double x1;
-  p = &x1;
-  
-  hypotenuse(1.5, 2.0, p);
-  cout << "The hypotenuse is " << *p << endl;
+
   return 0;
 }
