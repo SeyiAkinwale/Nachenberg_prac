@@ -10,7 +10,7 @@ void hypotenuse(double leg1, double leg2, double* &resultPtr)
 int main ()
 {
   double* p;
-  double  x1 = 0; double* p= &x1;
+  double  x1 = 0;  p= &x1;
   
   //hypotenuse(1.5, 2.0, p);
   cout << "The hypotenuse is " << *p << endl;
