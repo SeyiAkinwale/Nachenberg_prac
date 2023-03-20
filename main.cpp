@@ -4,7 +4,7 @@ using namespace std;
 void findDisorder(int arr[], int n, int* &p)
 {
   for (int k =1 ; k < n; k++)
-  //maybe look if one short & should start with 0
+
   {
     if(arr[k] < arr[k-1])
     {
