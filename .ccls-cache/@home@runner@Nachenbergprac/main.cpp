@@ -1,32 +1,16 @@
 using namespace std;
 #include <iostream>
+#include <cmath>
 
-void findDisorder(int arr[], int n, int* &p)
+void hypotenuse(double leg1, double leg2, double* resultPtr)
 {
-  for (int k =1 ; k < n; k++)
-
-  {
-    if(arr[k] < arr[k-1])
-    {
-      p = arr + k;
-      return;
-    }
-  }
-  p = nullptr;
+  *resultPtr = sqrt(leg1*leg1 + leg2*leg2);
 }
 
 int main ()
 {
-  int nums[6] = { 10, 20, 20, 40, 30, 50};
-  int* ptr;
-
-  findDisorder(nums, 6, ptr);
-  if (ptr == nullptr) cout<<" The array is ordered\n";
-  else
-  {
-    cout<< "The disorder is at address " << ptr << endl;
-    cout<< "It's at index " << ptr  - nums << endl;
-    cout<< "The items's value is" << *ptr << endl;
-  }    
+  double* p;
+  hypotenuse(1.5, 2.0, p);
+  cout << "The hypotenuse is " << *p << endl;
   return 0;
 }
