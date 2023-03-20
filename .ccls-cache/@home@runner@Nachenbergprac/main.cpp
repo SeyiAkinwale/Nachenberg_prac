@@ -1,26 +1,23 @@
 using namespace std;
 #include <iostream>
-#include <cmath>
 
-bool match(const char str1[], const char str2[])
+double computeAverage(const double* scores, int nScores)
 {
-  while (*str1 != 0 && *str2 !=0) //zero bytes at ends
-  {
-    if(*str1 != *str2)   //compare corresponding characters
-     return false;
-    str1++;            //advance to the next character
-    str2++;
-
-  }
-  return *str1 == *str2; //both ended at same time?
+  const double* ptr = scores;
+  double tot = 0;
+  while (ptr!= scores + nScores)
+    {
+      tot += *ptr;
+      ptr++;
+    }
+  return tot/nScores;
 }
+
 
 int main ()
 {
-  char a[10] = "pointless";
-  char b[10] = "pointless";
-
-  if (match(a,b)) cout<< "They're the same!\n";
-  
+  double vals[]={1,2,2,7};
+  int ARRAY_SIZE;
+  cout<<computeAverage(vals, ARRAY_SIZE);
   return 0;
 }
