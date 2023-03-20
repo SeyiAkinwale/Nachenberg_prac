@@ -5,11 +5,13 @@ double computeAverage(const double* scores, int nScores)
 {
   const double* ptr = scores;
   double tot = 0;
-  while (ptr!= scores + nScores)
-  {
-    tot += *ptr;
-    ptr++;
-  }
+    int i = 0;
+    while ((ptr+i) != scores + nScores)
+    {
+      //cout<<"hello";
+        tot += *(ptr+i);
+        i++;
+    }
   return tot/nScores;
 }
 
