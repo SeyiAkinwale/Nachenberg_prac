@@ -1,34 +1,32 @@
 using namespace std;
 #include <iostream>
 
-void mystery (int* &ptr, int a, int** b);
+void findDisorder(int arr[], int n, int* &p)
+{
+  for (int k =1 ; k < n; k++)
+  //maybe look if one short & should start with 0
+  {
+    if(arr[k] < arr[k-1])
+    {
+      p = arr + k;
+      return;
+    }
+  }
+  p = nullptr;
+}
 
 int main ()
 {
-  int num1 = 15, num2 = 9, num3 = 10;
-  int *p = &num1;
+  int nums[6] = { 10, 20, 20, 40, 30, 50};
+  int* ptr;
 
-  mystery(p, num2, &p);
-
-  cout << "num1: " << num1 << "num2: " <<num2;
-  cout << "num3: " << num3 << endl;
-
-  if (p == &num1) cout << " num1";
-  else if (p == &num2) cout << " num2";
-  else if (p == &num3) cout << " num3";
-  return 0;
-}
-
-void mystery (int* &ptr, int a, int** b)
-{
-  a++;
-  if (a> **b)
-    ptr = &a;
+  findDisorder(nums, 6, ptr);
+  if (ptr == nullptr) cout<<" The array is ordered\n";
   else
   {
-    ptr = *b;
-    *b = &a;
-  }
-  (*ptr) +=10;
+    cout<< "The disorder is at address " << ptr << endl;
+    cout<< "It's at index " << ptr  - nums << endl;
+    cout<< "The items's value is" << *ptr << endl;
+  }    
+  return 0;
 }
-
