@@ -1,25 +1,18 @@
 using namespace std;
 #include <iostream>
 
-double computeAverage(const double* scores, int nScores)
+const char* findTheChar(const char* str, char chr)
 {
-  const double* ptr = scores;
-  double tot = 0;
-    int i = 0;
-    while ((ptr+i) != scores + nScores)
-    {
-      //cout<<"hello";
-        tot += *(ptr+i);
-        i++;
-    }
-  return tot/nScores;
+  for (int k = 0; str[k] != 0; k++)
+    if (str[k] == chr)
+      return &str[k];
 }
 
 
 int main ()
 {
-  double vals[]={1,2,2,7};
-  int ARRAY_SIZE=4;
-  cout<<computeAverage(vals, ARRAY_SIZE);
+  char vals[]={'a','b','c','h','k','\0'};
+
+  cout<<findTheChar(vals, 'c');
   return 0;
 }
