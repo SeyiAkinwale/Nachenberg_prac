@@ -3,9 +3,15 @@ using namespace std;
 
 const char* findTheChar(const char* str, char chr)
 {
-  for (int k = 0; (str+k) != 0; k++)
-    if (str[k] == chr)
-      return &str[k];
+  char* pointerTemp=nullptr;
+  //pointerTemp = str;
+  for (int k = 0; *(str+k) != 0; k++)
+    if (*(str+k) == chr)
+    { 
+      return (str+k);
+    }
+
+  return nullptr;
 }
 
 
