@@ -1,24 +1,9 @@
-using namespace std;
 #include <iostream>
+using namespace std;
 
-const char* findTheChar(const char* str, char chr)
+int* minimart(int* a, int* b)
 {
-  char* pointerTemp=nullptr;
-  //pointerTemp = str;
-  for (int k = 0; *(str+k) != 0; k++)
-    if (*(str+k) == chr)
-    { 
-      return (str+k);
-    }
-
-  return nullptr;
+  if(*a < *b) return a;
+  else return b;
 }
 
-
-int main ()
-{
-  char vals[]={'a','b','c','h','k','\0'};
-
-  cout<<findTheChar(vals, 'c');
-  return 0;
-}
