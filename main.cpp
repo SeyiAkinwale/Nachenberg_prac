@@ -1,11 +1,13 @@
 using namespace std;
 #include <iostream>
 
-const char* findTheChar(const char* str, char chr)
+const char* findTheChar(const char str[], char chr)
 {
-  for (int k = 0; (str+k) != 0; k++)
-    if (str[k] == chr)
+  for (int k = 0; *(str+k) != 0; k++)
+    if (*(str+k) == chr)
+    { 
       return &str[k];
+    }
 }
 
 
